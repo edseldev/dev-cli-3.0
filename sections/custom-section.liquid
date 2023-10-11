@@ -31,6 +31,25 @@
       flex-wrap: wrap;
     background-color: #fff;
 }
+.custom_section .content {
+    height: 100%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0570/1392/8017/files/cargo-ebike_1681962517.jpg?v=1697027711);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.custom_section .content:before {
+    content: '';
+    background-color: rgb(5 48 116 / 90%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
 </style>
 {% schema %}
   {
