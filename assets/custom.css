@@ -1,0 +1,108 @@
+.custom_section .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.custom_section img {
+    width: 100%;
+    max-width: 100%;
+}
+.custom_section .row {
+    display: flex;
+      flex-wrap: wrap;
+    background-color: #fff;
+}
+.custom_section .content {
+    height: 100%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0570/1392/8017/files/cargo-ebike_1681962517.jpg?v=1697027711);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    padding: 35px;
+      display: flex;
+    align-items: center;
+}
+.custom_section .content h1 {
+    font-size: 32px;
+    color: #fff;
+    line-height: normal;
+      margin: 0;
+}
+.custom_section .content:before {
+    content: '';
+    background-color: rgb(5 48 116 / 90%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.custom_section .content p {
+    color: rgb(255 255 255 / 70%);
+    font-weight: 300;
+    font-size: 14px;
+    max-width: 310px;
+    margin: 15px 0;
+    line-height: normal;
+}
+.custom_section .content a {
+    background-color: #e91778;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    line-height: normal;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+@media (min-width:767px){
+  .mobile-view{
+    display:none;
+  }
+}
+@media (max-width:991px){
+  .custom_section .row {
+    align-items: center;
+}
+  .custom_section .content {
+    justify-content: center;
+}
+}
+@media (max-width:767px){
+  .custom_section .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+  .dekstop-view{
+    display:none;
+  }
+  .custom_section .col-md-6.order-1 {
+    order: 2;
+  }
+  .custom_section .content {
+    background: 0;
+    background-image: none;
+    text-align: center;
+    padding: 30px;
+  }
+  .custom_section .content h1 {
+    font-size: 26px;
+  }
+  .custom_section .content p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  .custom_section .content a {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .custom_section .row {
+    background-color: transparent;
+  }
+  .custom_section .content:before {
+    background-color: rgb(3 48 113);
+}
+}
